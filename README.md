@@ -16,7 +16,8 @@ In order to obtain the average current, it is common to perform analog-to-digita
 This Demo shows an example of performing AD conversion synchronized with a timer counter, i.e. PWM.
 
 This method of implementation is well known to engineers who control motors, battery current control, and grid-connected inverter control design.
-Although there are many books that describe this method[^1], there are few demonstration models that actually show how it works, so I believe that this is an effective demonstration model for proposing the method to customers.
+Although there are many books that describe this method[^1].
+
 ### 2.Assign Dead Time
 The model can also be given a DeadTime in the PWM generator.
 DeadTimes are inserted to avoid short-circuiting the device, but inserting DeadTimes introduces errors that can cause problems with convergence of the control response[^2].
@@ -34,8 +35,6 @@ PWMによってインダクタに印加する平均電圧を変更すること�
 このDemoではタイマカウンタ、すなわちPWMと同期したAD変換実行の例を示します。
 
 このような実装方法は、モータ制御を行うエンジニアや、バッテリーの電流制御、系統連系インバーターの制御設計ではよく知られた手法です。
-この方法が有効であると述べた本[^1]は多く有るものの実際にその動作を示すデモモデルは少ないので、
-顧客にその方法を提案する際に有効なデモモデルだと考えています。
 
 ### 2.DeadTimeの付与
 このモデルはPWM生成部にてDeadTimeを付与することができます。
