@@ -1,6 +1,23 @@
 # ADC synchronized with PWM
 Copyright 2021 - 2022 The MathWorks, Inc.
 
+## EN Introduction
+This demo model shows how to control the current flowing in an inductor by changing the average voltage applied to the inductor by PWM.
+
+The current flowing in the inductor changes nonlinearly with PWM, and to control the current, it is necessary to obtain the average current in the PWM cycle.
+This model can be described in terms of two elements.
+
+### 1.ADC execution synchronized with PWM timer
+In order to obtain the average current, it is common to perform analog-to-digital conversion synchronized with a timer counter used to generate the pulse width.
+This Demo shows an example of performing AD conversion synchronized with a timer counter, i.e. PWM.
+
+This method of implementation is well known to engineers who control motors, battery current control, and grid-connected inverter control design.
+Although there are many books that describe this method[^1], there are few demonstration models that actually show how it works, so I believe that this is an effective demonstration model for proposing the method to customers.
+### 2.Assign Dead Time
+The model can also be given a DeadTime in the PWM generator.
+DeadTimes are inserted to avoid short-circuiting the device, but inserting DeadTimes introduces errors that can cause problems with convergence of the control response[^2].
+This model is also effective in such cases.
+
 ## JP Introduction
 PWMによってインダクタに印加する平均電圧を変更することで
 インダクタに流れる電流をコントロールを実施するDemoモデルです。
@@ -8,8 +25,6 @@ PWMによってインダクタに印加する平均電圧を変更すること�
  <img src=https://camo.qiitausercontent.com/4b168ebfce261ad9bf92cf5b12ce86a4f3d344e6/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3333313633372f66326338663538322d356266642d376265312d633761362d6431316364633663376663392e676966
  width="600" height="450"
  />
-
-
 このモデルは2つの要素について説明できます
 
 ### 1.PWMタイマと同期したADC実行
@@ -29,26 +44,6 @@ DeadTimeはデバイスの短絡を回避するために挿入されれますが
 [^1]: Ricardo P. Aguilera et al. (2018). Digital Implementation of PI and Resonant Controller. In FREDE BLAABJERG(Eds.) CONTROL OF POWER ELECTRONIC CONVERTERS AND SYSTEMS volume1. Academic Press, pp.56-61
 [^2]: Dead-time  Voltage  Error Correction  with Parallel Disturbance Observers  for High  Performance  V/f  Control 
 http://itohserver01.nagaokaut.ac.jp/itohlab/paper/2007/IAS2007/hoshino.pdf
-
-
-## EN Introduction
-This demo model shows how to control the current flowing in an inductor by changing the average voltage applied to the inductor by PWM.
-
-The current flowing in the inductor changes nonlinearly with PWM, and to control the current, it is necessary to obtain the average current in the PWM cycle.
-This model can be described in terms of two elements.
-
-### 1.ADC execution synchronized with PWM timer
-In order to obtain the average current, it is common to perform analog-to-digital conversion synchronized with a timer counter used to generate the pulse width.
-This Demo shows an example of performing AD conversion synchronized with a timer counter, i.e. PWM.
-
-This method of implementation is well known to engineers who control motors, battery current control, and grid-connected inverter control design.
-Although there are many books that describe this method[^1], there are few demonstration models that actually show how it works, so I believe that this is an effective demonstration model for proposing the method to customers.
-### 2.Assign Dead Time
-The model can also be given a DeadTime in the PWM generator.
-DeadTimes are inserted to avoid short-circuiting the device, but inserting DeadTimes introduces errors that can cause problems with convergence of the control response[^2].
-This model is also effective in such cases.
-
-
 # Required Toolboxes
 MATLAB&reg;/
 Simulink&reg;/
