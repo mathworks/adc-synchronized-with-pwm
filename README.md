@@ -3,6 +3,7 @@ Copyright 2021 - 2022 The MathWorks, Inc.
 
 ## EN Introduction
 This demo model shows how to control the current flowing in an inductor by changing the average voltage applied to the inductor by PWM.
+
  <img src=https://user-images.githubusercontent.com/62166747/153804864-ed1d8fee-7aaa-4ad6-a096-7b74018feee3.gif
  width="600" height="450"
  />
