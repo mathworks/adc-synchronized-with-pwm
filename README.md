@@ -3,7 +3,10 @@ Copyright 2021 - 2022 The MathWorks, Inc.
 
 ## EN Introduction
 This demo model shows how to control the current flowing in an inductor by changing the average voltage applied to the inductor by PWM.
-
+ <img src=https://user-images.githubusercontent.com/62166747/153804864-ed1d8fee-7aaa-4ad6-a096-7b74018feee3.gif
+ width="600" height="450"
+ />
+ 
 The current flowing in the inductor changes nonlinearly with PWM, and to control the current, it is necessary to obtain the average current in the PWM cycle.
 This model can be described in terms of two elements.
 
@@ -22,9 +25,6 @@ This model is also effective in such cases.
 PWMによってインダクタに印加する平均電圧を変更することで
 インダクタに流れる電流をコントロールを実施するDemoモデルです。
 
- <img src=https://camo.qiitausercontent.com/4b168ebfce261ad9bf92cf5b12ce86a4f3d344e6/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3333313633372f66326338663538322d356266642d376265312d633761362d6431316364633663376663392e676966
- width="600" height="450"
- />
 このモデルは2つの要素について説明できます
 
 ### 1.PWMタイマと同期したADC実行
