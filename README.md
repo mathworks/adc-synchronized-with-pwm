@@ -49,7 +49,7 @@ MATLAB&reg;/
 Simulink&reg;/
 Simscape&trade;/
 Simscape Electrical&trade;/
-DSP System Toolboxes&trade;
+DSP System Toolbox&trade;
 
 # Recomend Toolbox
 Control System Toolbox&trade; 
