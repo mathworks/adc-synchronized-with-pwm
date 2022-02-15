@@ -1,6 +1,10 @@
 # ADC synchronized with PWM
 Copyright 2021 - 2022 The MathWorks, Inc.
 
+# Version
+Main Branch: R2021b<br>
+R2019b Branch: R2019b
+
 ## EN Introduction
 This demo model shows how to control the current flowing in an inductor by changing the average voltage applied to the inductor by PWM.
 
