@@ -4,6 +4,10 @@ Copyright 2021 - 2022 The MathWorks, Inc.
 ## EN Introduction
 This demo model shows how to control the current flowing in an inductor by changing the average voltage applied to the inductor by PWM.
 
+### How to Run
+1.Open the Project file in this repoitry and open one of the models stored in the Models folder.
+2.Run the simulation and check the waveforms in the Data Inspector or Scope Block.
+
  <img src=https://user-images.githubusercontent.com/62166747/153810086-c810ee2a-48d8-44cb-84f9-69b1c4fd83dc.PNG width="60%" height="60%"
  />
  <img src=https://user-images.githubusercontent.com/62166747/153804864-ed1d8fee-7aaa-4ad6-a096-7b74018feee3.gif
@@ -28,6 +32,10 @@ This model is also effective in such cases.
 ## JP Introduction
 PWMによってインダクタに印加する平均電圧を変更することで
 インダクタに流れる電流をコントロールを実施するDemoモデルです。
+
+### How to Run
+1.このリポイトリのProjectファイルを開いて、Modelsフォルダに保存されているモデルのいずれかを開きます。
+2.シミュレーションを実行してデータインスペクターで波形を確認します。
 
 このモデルは2つの要素について説明できます
 
