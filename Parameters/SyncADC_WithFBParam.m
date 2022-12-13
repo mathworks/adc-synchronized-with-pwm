@@ -2,7 +2,7 @@
 %Auther Yuki Kamatani 
 
 %PWM Unit Parameters
-fsw = 500e3; %Hz
+fsw = 40e3; %Hz
 PWM_Resolution = 0.001;
 CarrierSampleTime = 1 / fsw * PWM_Resolution;
 DeadTime = 1/fsw/1000;
@@ -11,7 +11,7 @@ MinDuty = PWM_Resolution * 5;
 MaxDuty = 1 - MinDuty;
 
 %Circuit components Parameters
-L = 100e-6;%[H]
+L = 500e-6;%[H]
 RdsON_FET = 10e-3;%[Ω]
 VinDC = 100;%[V]
 VoutDC = 50;%[V]
