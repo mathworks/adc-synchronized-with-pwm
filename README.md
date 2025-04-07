@@ -11,7 +11,7 @@ This demo model shows how to control the current flowing in an inductor by chang
 ### How to Run
 1.Open the Project file in this repoitry and open one of the models stored in the Models folder.
 2.Run the simulation and check the waveforms in the Data Inspector or Scope Block.
-
+3.In SyncronousADC_WithFB.slx, you can choose from multiple styles for the plant model using variant subsystems. You have the option to select the model granularity from three choices: Simulink, Simscape, or a simple configuration combining Simulink and Simscape.
  <img src=https://user-images.githubusercontent.com/62166747/153810086-c810ee2a-48d8-44cb-84f9-69b1c4fd83dc.PNG width="60%" height="60%"
  />
  <img src=https://user-images.githubusercontent.com/62166747/153804864-ed1d8fee-7aaa-4ad6-a096-7b74018feee3.gif
@@ -40,6 +40,9 @@ PWMによってインダクタに印加する平均電圧を変更すること�
 ### How to Run
 1.このリポイトリのProjectファイルを開いて、Modelsフォルダに保存されているモデルのいずれかを開きます。
 2.シミュレーションを実行してデータインスペクターで波形を確認します。
+3.SyncronousADC_WithFB.slxではプラントモデルがバリアントサブシステムで複数のスタイルを選択できます。
+　モデルの粒度を、Simulink、Simscape、Simulink＋Simscape（Simpleな構成）の３つから選択することが可能です。
+
 
 このモデルは2つの要素について説明できます
 
