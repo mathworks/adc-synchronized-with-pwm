@@ -2,7 +2,7 @@
 %Auther Yuki Kamatani 
 
 %PWM Unit Parameters
-fsw = 40e3; %Hz
+fsw = 200e3; %Hz
 PWM_Resolution = 0.001;
 CarrierSampleTime = 1 / fsw * PWM_Resolution;
 DeadTime = 1/fsw/1000;
@@ -20,8 +20,8 @@ VoutDC = 50;%[V]
 %Sensor ADC Quantization bit
 ADC_QuantBit = 12;
 QuantResolution = 1/(2^ADC_QuantBit);
-MaxRange = 200;%[V]
-MinRange = -200;%[V]
+MaxRange = 50;%[A]
+MinRange = -50;%[A]
 QuantUnit = (MaxRange - MinRange) * QuantResolution;%[V]
 
 
