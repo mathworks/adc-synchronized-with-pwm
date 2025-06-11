@@ -4,6 +4,7 @@
 %PWM Unit Parameters
 fsw = 200e3; %Hz
 PWM_Resolution = 0.001;
+TimerCountMax = 1/ PWM_Resolution;
 CarrierSampleTime = 1 / fsw * PWM_Resolution;
 DeadTime = 1/fsw/1000;
 
