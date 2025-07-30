@@ -70,8 +70,6 @@ https://jp.mathworks.com/help/sps/ug/buck-converter_example-ee_switching_power_s
 ライブラリが利用されていましたが、
 [MOSFET(Ideal,Switching)](https://jp.mathworks.com/help/sps/ref/mosfetidealswitching.html)に変更されています。
 
-![2025-07-17_13-17-14](/uploads/d420859d7c676bed1edda68a006054b9/2025-07-17_13-17-14.PNG)
-
 [Nch-MOSFET](https://jp.mathworks.com/help/sps/ref/nchannelmosfet.html)はゲート電圧の立ち上がりダイナミクスまで詳細に表現したスイッチングデバイスであるため、厳密で詳細度の高いスイッチング表現が可能ですがその分シミュレーションステップの刻み幅が短くなり、シミュレーション速度低下を招くことがあります。
 
 シミュレーションの目的が回路構成と制御構成および制御パラメータの整合性確認であれば、パワー半導体は[MOSFET(Ideal,Switching)](https://jp.mathworks.com/help/sps/ref/mosfetidealswitching.html)に代表される
