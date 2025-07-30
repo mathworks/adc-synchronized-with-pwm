@@ -56,13 +56,15 @@ MathWorks製品を使ってモデリングした場合、
 モデリングスタイルやソルバの設定については、モデルファイル内の各サブシステム階層にわかれて
 解説のコメントが日本語で記述されています。
 
-![2025-07-17_13-01-51](/uploads/5d453f3b7e71e3e6426c4ec7bb03eaaa/2025-07-17_13-01-51.PNG)
+<img width="1486" height="1070" alt="Image" src="https://github.com/user-attachments/assets/a2a50e90-db3b-45f0-8bd0-e0be4ef74d30" />
+
+<img width="1635" height="910" alt="Image" src="https://github.com/user-attachments/assets/e81c8679-41f3-4c36-ad21-45cab0507b9a" />
 
 ### BuckConverter.slx
 基本的なモデリングスタイルはBidirectionalCurrentControlConverter.slxと同様ですが、プラントモデルとなる回路モデル、制御モデルはMathWorksの公式でもモデルである、こちらの例題のものを一部引用しています。
 そのため下記サンプルと動作を比較して、シミュレーション動作の精度とシミュレーション実行速度の違いを確認することができます。
 https://jp.mathworks.com/help/sps/ug/buck-converter_example-ee_switching_power_supply.html
-
+<img width="949" height="609" alt="Image" src="https://github.com/user-attachments/assets/9ef782a3-efa3-4679-98ad-0a0bedbe803a" />
 大本のサンプルではパワーMOSFETライブラリに
 [Nch-MOSFET](https://jp.mathworks.com/help/sps/ref/nchannelmosfet.html)
 ライブラリが利用されていましたが、
