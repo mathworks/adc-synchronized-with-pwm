@@ -1,23 +1,26 @@
-%Copyright 2021 - 2021 The MathWorks, Inc.
-%Auther Yuki Kamatani 
+%Copyright 2021 - 2025 The MathWorks, Inc.
+%Auther Yuki Kamatani@ MathWorks Japan
 
+%======================================
 %PWM Unit Parameters
 fsw = 200e3; %Hz
 PWM_Resolution = 0.001;
 TimerCountMax = 1/ PWM_Resolution;
 CarrierSampleTime = 1 / fsw * PWM_Resolution;
-DeadTime = 1/fsw/1000;
+DeadTime = 1/fsw*PWM_Resolution;
 
-MinDuty = PWM_Resolution * 5;
-MaxDuty = 1 - MinDuty;
+%Set Duty Limit
+MinDuty = 0.01;
+MaxDuty = 0.95;
 
+%======================================
 %Circuit components Parameters
 L = 500e-6;%[H]
 RdsON_FET = 10e-3;%[Ω]
 VinDC = 100;%[V]
 VoutDC = 50;%[V]
 
-
+%======================================
 %Sensor ADC Quantization bit
 ADC_QuantBit = 12;
 QuantResolution = 1/(2^ADC_QuantBit);
@@ -25,7 +28,7 @@ MaxRange = 50;%[A]
 MinRange = -50;%[A]
 QuantUnit = (MaxRange - MinRange) * QuantResolution;%[V]
 
-
+%======================================
 %Control Design
 s = tf('s');
 
@@ -33,7 +36,7 @@ s = tf('s');
 Plant = 1/(L*s + RdsON_FET);
 
 %制御の帯域幅を設定
-TargetCntF = 2*pi*500;
+TargetCntF = 2*pi*500;%カットオフ周波数（rad)
 Tcnt = 1 / TargetCntF;
 
 %内部モデル原理に基づきコントローラーを設計
