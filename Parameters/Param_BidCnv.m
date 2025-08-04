@@ -3,7 +3,7 @@
 
 %======================================
 %PWM Unit Parameters
-fsw = 200e3; %Hz
+fsw = 100e3; %Hz
 PWM_Resolution = 0.001;
 TimerCountMax = 1/ PWM_Resolution;
 CarrierSampleTime = 1 / fsw * PWM_Resolution;
@@ -14,19 +14,20 @@ MinDuty = 0.01;
 MaxDuty = 0.95;
 
 %======================================
-%Circuit components Parameters
-L = 500e-6;%[H]
-RdsON_FET = 10e-3;%[Ω]
-VinDC = 100;%[V]
-VoutDC = 50;%[V]
-
-%======================================
 %Sensor ADC Quantization bit
 ADC_QuantBit = 12;
 QuantResolution = 1/(2^ADC_QuantBit);
 MaxRange = 50;%[A]
 MinRange = -50;%[A]
 QuantUnit = (MaxRange - MinRange) * QuantResolution;%[V]
+
+
+%======================================
+%Circuit components Parameters
+L = 500e-6;%[H]
+RdsON_FET = 10e-3;%[Ω]
+VinDC = 100;%[V]
+VoutDC = 50;%[V]
 
 %======================================
 %Control Design
