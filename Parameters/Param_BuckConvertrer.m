@@ -20,3 +20,5 @@ QuantResolution = 1/(2^ADC_QuantBit);
 MaxRange = 50;%[A]
 MinRange = -50;%[A]
 QuantUnit = (MaxRange - MinRange) * QuantResolution;%[V]
+T_junction1 = 404.79;
+T_junction2 = 384.83;
