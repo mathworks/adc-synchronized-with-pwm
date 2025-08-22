@@ -1,5 +1,5 @@
-disp("BuckConverter_beforeのSimulation実行");
-tic;sim("BuckConverter_before");toc
-disp("BuckConverter_afterのSimulation実行");
-tic;sim("BuckConverter_after");toc
+disp("BuckConverter_Accuracy_firstのSimulation実行");
+tic;sim("BuckConverter_Accuracy_first");toc
+disp("BuckConverter_Speed_firstのSimulation実行");
+tic;sim("BuckConverter_Speed_first");toc
 
